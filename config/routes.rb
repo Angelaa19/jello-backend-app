@@ -9,5 +9,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/jellos" => "jellos#index"
+
+    get "/users" => "users#index"
+    post "/users" => "users#create"
   end
 end
